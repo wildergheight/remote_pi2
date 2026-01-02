@@ -25,7 +25,7 @@ val1 = 1.0
 
 while True:
     # Listen for the ESP32
-    packet = rfm9x.receive(timeout=2.0)
+    packet = rfm9x.receive(timeout=1.0)
     
     if packet is not None:
         print(f"Received request (Size: {len(packet)})")
